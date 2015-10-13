@@ -1,3 +1,9 @@
+/*
+* Copyright: (C) 2015 Sheffield Robotics
+* Authors: Uriel Martinez
+* CopyPolicy: Released under the terms of the LGPLv2.1 or later, see LGPL.TXT
+*/
+
 #include "ros/ros.h"
 #include "std_msgs/String.h"
 #include "std_msgs/Header.h"
