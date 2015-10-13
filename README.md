@@ -1,2 +1,4 @@
 # active_touch
-group of algorithms for active touch
+Group of algorithms for active touch
+
+Created on 13th October 2015
