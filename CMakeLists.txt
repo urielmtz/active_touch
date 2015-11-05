@@ -133,7 +133,6 @@ include_directories(
 add_executable(tactile_sensors src/tactile_sensors.cpp)
 add_executable(joints_controller src/joints_controller.cpp)
 add_executable(sensory_feedback src/sensory_feedback.cpp)
-add_executable(robot_arm src/robot_arm.cpp)
 add_executable(robot_control src/robot_control.cpp)
 
 ## Add cmake target dependencies of the executable
@@ -142,7 +141,6 @@ add_executable(robot_control src/robot_control.cpp)
 add_dependencies(tactile_sensors active_touch_generate_messages_cpp)
 add_dependencies(joints_controller active_touch_generate_messages_cpp)
 add_dependencies(sensory_feedback active_touch_generate_messages_cpp)
-add_dependencies(robot_arm active_touch_generate_messages_cpp)
 add_dependencies(robot_control active_touch_generate_messages_cpp)
 
 ## Specify libraries to link a library or executable target against
@@ -152,7 +150,6 @@ add_dependencies(robot_control active_touch_generate_messages_cpp)
 target_link_libraries(tactile_sensors ${catkin_LIBRARIES})
 target_link_libraries(joints_controller ${catkin_LIBRARIES})
 target_link_libraries(sensory_feedback ${catkin_LIBRARIES})
-target_link_libraries(robot_arm ${catkin_LIBRARIES})
 target_link_libraries(robot_control ${catkin_LIBRARIES})
 
 #############
